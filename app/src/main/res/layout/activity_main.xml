@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.taeksukim.android.activitycontrol.MainActivity"
+    android:weightSum="1">
+
+    <Button
+        android:text="Common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mCommon" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+    <Button
+        android:text="Trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTrans1" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tv1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textSize="14sp" />
+
+    <Button
+        android:text="trans2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTrans2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tv2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+    <Button
+        android:text="dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDial" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etDial"
+        android:hint="number" />
+
+    <Button
+        android:text="browse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBrowse" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etBrower"
+        android:hint="URL" />
+
+    <Button
+        android:text="sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSMS" />
+
+</LinearLayout>
