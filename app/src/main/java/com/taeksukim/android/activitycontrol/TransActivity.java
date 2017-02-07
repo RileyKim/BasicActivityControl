@@ -31,6 +31,15 @@ public class TransActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
+
+        returnValue();
+
+        //6. 액티비티를 종료하여 메인 액티비티를 화면에 나타낸다.
+        finish();
+    }
+
+    private void returnValue() {
+
         Intent intent = new Intent();
         //1. 되돌려 줄 값을 설정
         String result = editText.getText().toString();
@@ -44,8 +53,7 @@ public class TransActivity extends AppCompatActivity implements View.OnClickList
         intent.putExtra("result", result);
         //5. setResult 함수로 결과값 전송
         setResult(statusCode, intent);
-        //6. 액티비티를 종료하여 메인 액티비티를 화면에 나타낸다.
-        finish();
+
     }
 
 }
